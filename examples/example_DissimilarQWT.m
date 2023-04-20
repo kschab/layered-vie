@@ -76,7 +76,7 @@ for thetai = [0, pi/8,pi/4,pi*3/8]
         VG = onedim.incidentPlusPlaneWaveGamma(mesh,hs,k0,k0z);
         
         % compute vacuum impedance matrix
-        Z0 = onedim.GenerateZ0Fast(mesh, k0z, k0);
+        Z0 = onedim.GenerateZ0(mesh, k0z, k0);
         Zp = onedim.GenerateZp(mesh,k0);
         ZG = onedim.GenerateZGamma(mesh, hs, k0z, k0);
         
